@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8bb78d2f-a03b-4503-844d-8e8ca8b18666">
+  <name>ВКМ_ЗарплатаИОтпускаОтчеты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Зарплата и отпуска отчеты</value>
+  </synonym>
+</mdclass:Role>

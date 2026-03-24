@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b8c687a0-c1fc-4a1a-b13c-d0cf026f611b">
+  <producedTypes>
+    <containerType typeId="7f63f97b-be43-4689-8efa-ec89c2246018" valueTypeId="67c48a14-f904-41a1-b3c6-abbd68f1a72c"/>
+  </producedTypes>
+  <name>ВКМ_Часовой</name>
+  <synonym>
+    <key>ru</key>
+    <value>ВКМ часовой</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>4</precision>
+      <scale>2</scale>
+    </numberQualifiers>
+  </type>
+</mdclass:DefinedType>
