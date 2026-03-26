@@ -26,13 +26,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Subsystem.ВКМ_РаботаСЗаявкамиКлиентов</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</name>
 		<right>
 			<name>Read</name>
