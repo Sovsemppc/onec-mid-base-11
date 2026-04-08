@@ -123,6 +123,7 @@
     <items xsi:type="form:FormField">
       <name>Ссылка</name>
       <id>22</id>
+      <enabled>false</enabled>
       <userVisible>
         <common>true</common>
         <for>

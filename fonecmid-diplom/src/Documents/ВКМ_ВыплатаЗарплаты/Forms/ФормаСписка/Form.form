@@ -163,6 +163,7 @@
     <items xsi:type="form:FormField">
       <name>Ссылка</name>
       <id>25</id>
+      <enabled>false</enabled>
       <userVisible>
         <for>
           <role>Role.АдминистраторСистемы</role>

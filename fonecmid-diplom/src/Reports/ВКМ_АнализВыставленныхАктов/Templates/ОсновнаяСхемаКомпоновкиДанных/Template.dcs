@@ -7,16 +7,6 @@
 	<dataSet xsi:type="DataSetQuery">
 		<name>НаборДанных1</name>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаКОплате</dataPath>
-			<field>СуммаКОплате</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Сумма к оплате</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>Договор</dataPath>
 			<field>Договор</field>
 			<role>
@@ -47,15 +37,34 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВыставленоАктов</dataPath>
+			<field>ВыставленоАктов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выставлено актов</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВыполненоРабот</dataPath>
+			<field>ВыполненоРабот</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнено работ</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	ВКМ_ВыполненныеКлиентуРаботыОстаткиИОбороты.Организация КАК Организация,
 	ВКМ_ВыполненныеКлиентуРаботыОстаткиИОбороты.Клиент КАК Клиент,
 	ВКМ_ВыполненныеКлиентуРаботыОстаткиИОбороты.Договор КАК Договор,
-	ВКМ_ВыполненныеКлиентуРаботыОстаткиИОбороты.СуммаКОплатеКонечныйОстаток КАК СуммаКОплате,
-	ВКМ_НоменклатураРаботыСпециалиста.Значение КАК НоменклатураРаботСпециалиста
-{ВЫБРАТЬ
-	СуммаКОплате}
+	ВКМ_НоменклатураРаботыСпециалиста.Значение КАК НоменклатураРаботСпециалиста,
+	ВКМ_ВыполненныеКлиентуРаботыОстаткиИОбороты.СуммаКОплатеПриход КАК ВыполненоРабот,
+	ВКМ_ВыполненныеКлиентуРаботыОстаткиИОбороты.СуммаКОплатеРасход КАК ВыставленоАктов
 ИЗ
 	РегистрНакопления.ВКМ_ВыполненныеКлиентуРаботы.ОстаткиИОбороты(&amp;НачалоПериода, &amp;КонецПериода, , , ) КАК ВКМ_ВыполненныеКлиентуРаботыОстаткиИОбороты,
 	Константа.ВКМ_НоменклатураРаботыСпециалиста КАК ВКМ_НоменклатураРаботыСпециалиста</query>
@@ -133,7 +142,10 @@
 					<dcsset:field>НоменклатураРаботСпециалиста</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаКОплате</dcsset:field>
+					<dcsset:field>ВыполненоРабот</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВыставленоАктов</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:dataParameters>

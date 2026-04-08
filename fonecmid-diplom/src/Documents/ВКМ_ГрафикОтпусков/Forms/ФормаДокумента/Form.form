@@ -296,6 +296,38 @@
         <textEdit>true</textEdit>
       </extInfo>
     </items>
+    <items xsi:type="form:FormField">
+      <name>ОтпускаСотрудниковПревышениеОтпуска</name>
+      <id>42</id>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.ОтпускаСотрудников.ПревышениеОтпуска</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ОтпускаСотрудниковПревышениеОтпускаРасширеннаяПодсказка</name>
+        <id>44</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ОтпускаСотрудниковПревышениеОтпускаКонтекстноеМеню</name>
+        <id>43</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>EnterOnInput</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    </items>
     <autoCommandBar>
       <name>ОтпускаСотрудниковКоманднаяПанель</name>
       <id>12</id>
